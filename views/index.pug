@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+    body
+           form.container.mt-4(method="post")
+                .form-group.row
+                    label.col-sm-2.col-form-label(for='name') Name
+                    .col-sm-3
+                        input#name.form-control(type='text')
+                .form-group.row
+                    label.col-sm-2.col-form-label(for='email') Email
+                    .col-sm-3
+                     input#email.form-control(type='email', placeholder='Password')
+                .form-group.row
+                    label.col-sm-2.col-form-label(for='content') content
+                    .col-sm-3
+                        textarea#content.form-control(rows='3', style="resize:none")
+                #{messages}
+                .form-group.row
+                    button.btn.btn-primary(type='submit') Submit
+
+
+
+
